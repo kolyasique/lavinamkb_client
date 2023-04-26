@@ -1,0 +1,50 @@
+
+@use './library';
+
+.wrapper{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    // background-color: library.$base-dark-color;
+}
+
+.header_block_left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 50%;
+}
+.header_block_right{
+    width: 50%;
+}
+.header_logo_standart{
+    // width:library.$width-menu-logo-rovno;
+    width: 25vw;
+    padding: 10px;
+}
+
+.header_logo_chat{
+    z-index: 50;
+    width: 30px;
+    transition: ease-in-out 200ms;
+}
+
+
+.header_logo_chat:hover{
+    scale: 1.1;
+    filter: drop-shadow(0.5px 0.5px 1px rgba(65, 118, 255, 0.81));
+
+}
+.header_logo_note{
+    z-index: 50;
+    width: 30px;
+    transition: ease-in-out 200ms;
+}
+
+.header_logo_note:hover{
+    scale: 1.1;
+    filter: drop-shadow(0.5px 0.5px 1px rgba(65, 118, 255, 0.81));
+}

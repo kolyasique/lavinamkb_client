@@ -1,0 +1,184 @@
+@use './library';
+
+.wrapper{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.workSpace_panel{
+display: flex;
+flex-direction: row;
+height: 15%;
+justify-content: space-around;
+
+-webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.workSpace_panel_left{
+    height: 30%;
+}
+.workSpace_panel_left_button{
+    align-items: center;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(248, 225, 225, 0.193);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+    color: #223341;
+    padding: 5px;
+    margin: 2.5px 5px;
+}
+.workSpace_panel_middle{
+    height: 30%;
+}
+
+.workSpace_panel_right{
+    height: 30%;
+}
+
+.workspace_resultpolygon{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    border-top: 2px solid #c2c0c0;
+}
+
+.resultPolygon_header{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.resultPolygon_header_clientName{
+    background-color: gray;
+    padding: 2.5px;
+    border-radius: 3px;
+}
+.resultPolygon_main{
+    display: flex;
+    flex-direction: row;
+}
+.workspace_resultpolygon_client{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border: 0.5px solid lightgrey;
+    padding: 10px;
+    margin: 5px 10px;
+    box-shadow: 0px 0px 6px 0.5px #d5d5d5;
+    border-radius: 5px;
+    // height: 80px;
+
+}
+.resultpolygon_client_objects{
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+    background-color: rgb(219 219 219);
+    border-radius: 5px;
+    align-items: center;
+    border: 0.5px solid lightgray;
+    /* align-content: center; */
+    justify-content: center;
+ 
+
+}
+.resultpolygon_client_info{
+
+}
+
+$object_status:(
+    active:#afafaf,
+    stop:#ffb700a3,
+    finished:#ae0303b5,
+    in_process:#005bab91,
+);
+.resultpolygon_objects_element_active{
+    display: flex;
+    width: 95%;
+    flex-direction: row;   
+    background-color: map-get($object_status, active);;
+    border-radius: 5px;
+    margin: 2.5px 5px;
+}
+.resultpolygon_objects_element_stop{
+    display: flex;
+    width: 95%;
+    flex-direction: row;   
+    background-color: map-get($object_status, stop);;
+    border-radius: 5px;
+    margin: 2.5px 5px;
+}
+.resultpolygon_objects_element_finished{
+    display: flex;
+    width: 95%;
+    flex-direction: row;   
+    background-color: map-get($object_status, finished);
+    border-radius: 5px;
+    margin: 2.5px 5px;
+}
+.resultpolygon_objects_element_in_process{
+    display: flex;
+    width: 95%;
+    flex-direction: row;   
+    background-color: map-get($object_status, in_process);;
+    border-radius: 5px;
+    margin: 2.5px 5px;
+}
+.resultpolygon_client_widget{
+ 
+}
+.resultpolygon_client_widget_button{
+    align-items: center;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(248, 225, 225, 0.193);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+    color: #223341;
+    padding: 5px;
+    margin: 2.5px 5px;
+}
+
+.resultpolygon_client_objects::-webkit-scrollbar-thumb {
+    border: 0.5px solid lightgray;
+    background-color: #ccc;
+}
+.resultpolygon_client_objects::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.resultpolygon_client_objects::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.resultpolygon_client_objects::-webkit-scrollbar-thumb {
+    border-radius: 2.5px;
+    border: 0.5px solid lightgray; 
+    background-color: rgba(0, 0, 0, .5);
+}
+.resultpolygon_client_objects{
+    p{
+        margin-block-start: 0;
+        margin-block-end: 0; 
+    }
+    h6{
+        margin-block-start: 0;
+    margin-block-end: 0;
+    }
+}
