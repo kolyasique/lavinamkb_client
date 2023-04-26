@@ -2,22 +2,23 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
   },
   extends: [
     'plugin:react/recommended',
-    'standard-with-typescript'
+    'airbnb',
   ],
   overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
-    'react'
+    'react',
   ],
   rules: {
-    'react/react-in-jsx-scope': 0
-  }
-}
+    'react/jsx-filename-extension': 0,
+    'react/react-in-jsx-scope': 0,
+  },
+};

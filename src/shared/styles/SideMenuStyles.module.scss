@@ -1,0 +1,28 @@
+@use './library';
+
+.sideMenu_block_standart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // height: 85vh;
+    width: 15vw;
+    // gap: 20px;
+    padding: 10px;
+    background-color: library.$base-medium-color;
+    color: white;
+    transition: ease-in-out 200ms;
+}
+.sideMenu_element_standart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.534);
+    padding: 10px 0px;;
+}
+.sideMenu_element_standart:hover{
+   background-color: rgba(240, 248, 255, 0.193);
+}

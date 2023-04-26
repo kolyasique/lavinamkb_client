@@ -1,0 +1,108 @@
+@use '../../shared//styles/library';
+
+.overWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateY(0px);
+    box-sizing: border-box;
+    // border-radius: library.$standard-block-radius;
+    border-bottom: 3px dotted #282c34;
+    border-top: 3px dotted #282c34;
+    padding: library.$standard-block-padding;
+    background-color: #e4e9f512;
+    // box-shadow: inset 0px 0px 20px 5px darkslategrey
+
+}
+.myInfoWidget_blockphoto_male{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../../shared/icons/avatar/male.svg');
+    background-size: cover;
+}
+
+.myInfoWidget_blockphoto_female{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../../shared/icons/avatar/female.svg');
+}
+
+.myInfoWidget_block_p{
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+}
+.myInfoWidget_blockprogress_standart{
+
+}
+.myInfoWidget_blockbuttons_standart{
+
+}
+
+.myInfoWidget_close{
+    // background-image: url('../../shared/icons/myinfowidget/arrowDown.svg');
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+.myInfoWidget_close:active{
+    transform: rotate(180deg);
+}
+.myInfoWidget_open{
+    // background-image: url('../../shared/icons/myinfowidget/arrowUp.svg');
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: ease-in-out 200ms;
+}
+.myInfoWidget_open:active{
+    transform: rotate(180deg);}
+
+  .move_out{
+    flex-direction: column;
+    align-items: center;
+    // height: 100px;
+    // width: 100%;
+    box-sizing: border-box;
+    transform: translateY(-295px);
+    // transform: scale(0);
+
+    // position: absolute;
+    // transform: scaleY(0);
+    transition: all 300ms ease-in;
+  }
+  .move_in{
+    // flex-direction: column;
+    // align-items: center;
+    // box-sizing: border-box;
+    transform: translateY(0px);
+    transition: all 300ms ease-in;
+  }
+
+  .myInfoWidget_blockbuttons_button{
+    align-items: center;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(248, 225, 225, 0.193);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+    color: #223341;
+    padding: 5px;
+    margin: 2.5px 5px;
+  }
