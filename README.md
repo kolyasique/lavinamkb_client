@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 https://www.svgrepo.com/collection/iconsax-duotone-filled-icons/
+
+https://www.svgrepo.com/collection/cfpb-design-system-icons/15
