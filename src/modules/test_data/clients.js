@@ -1,7 +1,7 @@
 const clients = [
   {
     id: 1,
-    name: 'ООО Мишка и Шишка',
+    name: 'ООО Мишка',
     contracts: ['2345', '6543A'],
     objects: [
       {
